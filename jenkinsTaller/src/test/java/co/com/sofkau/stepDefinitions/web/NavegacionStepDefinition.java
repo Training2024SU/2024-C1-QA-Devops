@@ -1,5 +1,6 @@
-package co.com.sofkau.stepDefinitions;
+package co.com.sofkau.stepDefinitions.web;
 
+import co.com.sofkau.stepDefinitions.SetUp;
 import io.cucumber.java.en.Given;
 
 import static co.com.sofkau.tasks.AbrirPaginaPrincipal.abrirPaginaPrincipal;

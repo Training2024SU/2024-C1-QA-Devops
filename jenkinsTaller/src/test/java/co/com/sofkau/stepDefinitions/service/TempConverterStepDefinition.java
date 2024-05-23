@@ -12,7 +12,6 @@ public class TempConverterStepDefinition extends SetupService {
 
     String valor;
 
-
     @Given("que el es usuario quiere convertir {int} celsius a fahrenheit en {string}")
     public void queElEsUsuarioQuiereConvertirCelsiusAFahrenheitEn(Integer int1, String urlBase) {
         super.setupService(urlBase);
@@ -23,15 +22,14 @@ public class TempConverterStepDefinition extends SetupService {
     public void hace_la_peticion_de_tipo_soap_con_el_recurso(String resource) {
         actor.attemptsTo(
                 doSoap().withTheResource(resource)
-                        .andHeaders(super.headers())
+                        .andHeaders(super.headers("https://www.w3schools.com/xml/CelsiusToFahrenheit"))
                         .andTheBody(getBody(valor,"CelsiusToFahrenheit.xml"))
         );
     }
 
     @Then("deberia obtener el el valor {string} en grados fahrenheit")
     public void deberiaObtenerElElValorEnGradosFahrenheit(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
     }
 
 }

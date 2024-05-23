@@ -10,7 +10,6 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources/features"},
         glue = {"co.com.sofkau.stepDefinitions",
                 "co.com.sofkau.hooks"}
-
 )
 public class GeneralTest {
 }

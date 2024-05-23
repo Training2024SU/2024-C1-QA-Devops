@@ -1,9 +1,10 @@
 package co.com.sofkau.ui;
 
+import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
-import net.thucydides.core.annotations.findby.By;
+import org.openqa.selenium.By;
 
-public class PaginaPrincipal {
+public class PaginaPrincipal extends PageObject {
     public static Target BOTON_MI_CUENTA = Target.
             the("boton mi cuenta").located(org.openqa.selenium.By.
                     xpath("//div[@class = 'micuenta deslogeado']"));
@@ -11,4 +12,9 @@ public class PaginaPrincipal {
             .located(By.xpath("//div[@class = 'micuenta logeado']"));
     public static final Target LOGO_PAGINA_PRINCIPAL = Target.the("logo buscalibre")
             .located(By.xpath("//a[@title='Buscalibre.com' and contains(@class, 'logo')]"));
+
+    public static Target BARRA_BUSQUEDA = Target.the("Barra de búsqueda")
+            .located(By.cssSelector("#buscador input"));
+    public static Target CATEGORIAS = Target.the("Categorías de libros")
+            .located(By.cssSelector("#categoriasdeployed ul li"));
 }

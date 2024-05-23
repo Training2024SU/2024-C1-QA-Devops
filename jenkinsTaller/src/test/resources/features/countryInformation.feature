@@ -4,8 +4,8 @@ Feature:  pruebas de servicio soap
   para obtener informacion del pais segun su codigo iso
 
   @codigoIso
-  Scenario: prueba nombre capital del pais segun codigo iso
-    Given que el es usuario quiere ingresar el codigo "FR"
+  Scenario: prueba nombre  del pais segun codigo iso
+    Given que el es usuario quiere ingresar el codigo "ING"
     When hace la peticion de tipo soap
     Then deberia obtener un statuscode 200
-    And deberia obtener el nombre de la capital del pais
+    And deberia obtener el nombre del pais

@@ -19,4 +19,13 @@ public class SetupService {
         headersCollection.put("SOAPAction","");
         return headersCollection;
     }
+
+    protected HashMap<String, Object> headers(String soapAction){
+        HashMap<String, Object> headersCollection = new HashMap<>();
+        headersCollection.put("Content-Type","text/xml;charset=UTF-8");
+        headersCollection.put("SOAPAction",soapAction);
+        return headersCollection;
+    }
+
+
 }

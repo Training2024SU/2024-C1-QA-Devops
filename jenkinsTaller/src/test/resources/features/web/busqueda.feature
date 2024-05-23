@@ -9,10 +9,10 @@ Feature: Búsqueda de libros
 
   Scenario: Búsqueda por categoría
     Given El usuario se encuentra en la página principal
-#    When selecciona una categoría cualquiera
-#    Then debería ver productos relacionados a esa categoría
+    When selecciona una categoría cualquiera
+    Then debería ver productos relacionados a esa categoría
 
   Scenario: Búsqueda por termino
     Given El usuario se encuentra en la página principal
-#    When realiza una búsqueda por texto
-#    Then debería ver productos relevantes en los resultados de la búsqueda
+    When realiza una búsqueda por texto
+    Then debería ver productos relevantes en los resultados de la búsqueda

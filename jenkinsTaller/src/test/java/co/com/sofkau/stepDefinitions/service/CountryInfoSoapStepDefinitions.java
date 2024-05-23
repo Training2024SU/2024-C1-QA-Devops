@@ -44,7 +44,7 @@ public class CountryInfoSoapStepDefinitions extends SetupService {
 
     @Then("deberia obtener el nombre {string} del pais")
     public void deberia_obtener_el_nombre_del_pais(String pais) {
-        
+
     }
 
 

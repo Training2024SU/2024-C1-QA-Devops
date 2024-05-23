@@ -14,15 +14,16 @@ import static org.hamcrest.CoreMatchers.equalTo;
 
 public class CountryInfoSoapStepDefinitions extends SetupService {
     String codigoISO;
-    @Given("que el es usuario quiere ingresar el codigo {string}")
-    public void queElEsUsuarioQuiereIngresarElCodigo(String iso) {
-        super.setupService("http://webservices.oorsprong.org");
+
+    @Given("que el es usuario quiere ingresar el codigo {string} con {string}")
+    public void que_el_es_usuario_quiere_ingresar_el_codigo_con(String iso, String urlBase) {
+        super.setupService(urlBase);
         codigoISO = iso;
     }
-    @When("hace la peticion de tipo soap")
-    public void haceLaPeticionDeTipoSoap() {
+    @When("hace la peticion de tipo soap con el recurso {string}")
+    public void hace_la_peticion_de_tipo_soap_con_el_recurso(String resource) {
         actor.attemptsTo(
-                doSoap().withTheResource("/websamples.countryinfo/CountryInfoService.wso")
+                doSoap().withTheResource(resource)
                         .andHeaders(super.headers())
                         .andTheBody(getBody(codigoISO))
         );
@@ -40,6 +41,44 @@ public class CountryInfoSoapStepDefinitions extends SetupService {
                 )
         );
     }
+
+    @Then("deberia obtener el nombre {string} del pais")
+    public void deberia_obtener_el_nombre_del_pais(String pais) {
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @Given("que el es usuario quiere ingresar el codigo {string}")
+    public void queElEsUsuarioQuiereIngresarElCodigo(String iso) {
+        super.setupService("http://webservices.oorsprong.org");
+        codigoISO = iso;
+    }
+    @When("hace la peticion de tipo soap")
+    public void haceLaPeticionDeTipoSoap() {
+        actor.attemptsTo(
+                doSoap().withTheResource("/websamples.countryinfo/CountryInfoService.wso")
+                        .andHeaders(super.headers())
+                        .andTheBody(getBody(codigoISO))
+        );
+    }
+
+
+
     @Then("deberia obtener el nombre del pais")
     public void deberia_obtener_el_nombre_del_pais() {
 

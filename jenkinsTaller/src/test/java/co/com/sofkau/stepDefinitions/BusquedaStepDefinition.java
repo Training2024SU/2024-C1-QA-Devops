@@ -1,8 +1,8 @@
 package co.com.sofkau.stepDefinitions;
 
-import co.com.sofkau.questions.ListaLibrosResultado;
-import co.com.sofkau.tasks.BuscarPorTexto;
-import co.com.sofkau.tasks.SeleccionarCategoria;
+import co.com.sofkau.questions.web.ListaLibrosResultado;
+import co.com.sofkau.tasks.web.BuscarPorTexto;
+import co.com.sofkau.tasks.web.SeleccionarCategoria;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.questions.Text;

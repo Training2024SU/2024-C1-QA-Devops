@@ -50,6 +50,7 @@ public class UsuarioModel {
     public String getConfirmarPassword() {
         return confirmarPassword;
     }
+
     public void setConfirmarPassword(String confirmarPassword) {
         this.confirmarPassword = confirmarPassword;
     }

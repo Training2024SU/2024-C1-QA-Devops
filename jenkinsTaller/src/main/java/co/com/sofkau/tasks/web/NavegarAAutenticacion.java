@@ -1,4 +1,4 @@
-package co.com.sofkau.tasks;
+package co.com.sofkau.tasks.web;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -15,7 +15,6 @@ public class NavegarAAutenticacion implements Task {
                 Click.on(BOTON_MI_CUENTA)
         );
     }
-
     public static NavegarAAutenticacion navegarAAutenticacion(){
         return new NavegarAAutenticacion();
     }

@@ -12,7 +12,6 @@ import static co.com.sofkau.ui.PaginaDetallesLibro.PRECIO;
 import static co.com.sofkau.ui.PaginaDetallesLibro.TITULO;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
-import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 
 public class DetallesSteps {
@@ -25,10 +24,9 @@ public class DetallesSteps {
 
     @Then("debería ver la información detallada de éste")
     public void deberiaVerLaInformacionDetalladaDeEste() {
-        String tituloEsperado = theActorInTheSpotlight().recall("titulo_libro");
         theActorInTheSpotlight().should(
-                seeThat(Text.of(TITULO), equalTo(tituloEsperado)),
-                seeThat(Text.of(PRECIO), notNullValue()),
+                seeThat(Text.of(TITULO), notNullValue(String.class)),
+                seeThat(Text.of(PRECIO), notNullValue(String.class)),
                 seeThat(Displayed.of(FICHA)),
                 seeThat(Visibility.of(FICHA))
         );

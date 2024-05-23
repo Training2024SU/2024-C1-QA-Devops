@@ -1,4 +1,4 @@
-package co.com.sofkau.tasks;
+package co.com.sofkau.tasks.web;
 
 import co.com.sofkau.models.UsuarioModel;
 import net.serenitybdd.screenplay.Actor;

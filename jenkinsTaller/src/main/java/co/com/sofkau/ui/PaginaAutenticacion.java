@@ -10,4 +10,10 @@ public class PaginaAutenticacion extends PageObject {
     public static Target BOTON_CONTINUAR_AUTENTICACION = Target.
             the("boton continuar").located(org.openqa.selenium.By.
                     xpath("//button[text()='Continuar']"));
+    public static Target CAMPO_PASSWORD_REGISTRADO = Target.
+            the("campo password").located(org.openqa.selenium.By.
+                    xpath("//input[@id = 'signin_password']"));
+    public static Target BOTON_INGRESAR = Target.
+            the("boton ingresar").located(org.openqa.selenium.By.
+                    xpath("//button[text()='Ingresar']"));
 }

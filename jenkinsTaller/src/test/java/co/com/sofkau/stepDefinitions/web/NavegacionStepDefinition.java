@@ -4,7 +4,7 @@ import co.com.sofkau.stepDefinitions.SetUp;
 import io.cucumber.java.en.Given;
 
 import static co.com.sofkau.tasks.AbrirPaginaPrincipal.abrirPaginaPrincipal;
-import static co.com.sofkau.utils.Constante.url_pagina_principal;
+import static co.com.sofkau.utils.Constante.URL_PAGINA_PRINCIPAL;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class NavegacionStepDefinition extends SetUp {
@@ -17,7 +17,7 @@ public class NavegacionStepDefinition extends SetUp {
     @Given("El usuario se encuentra en la página principal")
     public void elUsuarioSeEncuentraEnLaPaginaPrincipal() {
         theActorInTheSpotlight().wasAbleTo(
-                abrirPaginaPrincipal().conLaUrl(url_pagina_principal)
+                abrirPaginaPrincipal().conLaUrl(URL_PAGINA_PRINCIPAL)
         );
     }
 }

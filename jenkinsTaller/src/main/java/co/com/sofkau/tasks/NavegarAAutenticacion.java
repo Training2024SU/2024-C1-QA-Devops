@@ -15,7 +15,6 @@ public class NavegarAAutenticacion implements Task {
                 Click.on(BOTON_MI_CUENTA)
         );
     }
-
     public static NavegarAAutenticacion navegarAAutenticacion(){
         return new NavegarAAutenticacion();
     }

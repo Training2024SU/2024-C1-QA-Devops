@@ -2,7 +2,7 @@
     <soapenv:Header/>
     <soapenv:Body>
         <ns:CelsiusToFahrenheit>
-            <ns:Celsius>27</ns:Celsius>
+            <ns:Celsius>%s</ns:Celsius>
         </ns:CelsiusToFahrenheit>
     </soapenv:Body>
 </soapenv:Envelope>

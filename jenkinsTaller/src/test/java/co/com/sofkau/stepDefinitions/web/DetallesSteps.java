@@ -1,6 +1,6 @@
 package co.com.sofkau.stepDefinitions.web;
 
-import co.com.sofkau.tasks.SeleccionarLibro;
+import co.com.sofkau.tasks.web.SeleccionarLibro;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.questions.Displayed;

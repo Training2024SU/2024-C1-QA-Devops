@@ -1,4 +1,4 @@
-package co.com.sofkau.tasks;
+package co.com.sofkau.tasks.web;
 
 import net.serenitybdd.core.pages.ListOfWebElementFacades;
 import net.serenitybdd.core.pages.WebElementFacade;

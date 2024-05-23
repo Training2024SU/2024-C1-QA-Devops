@@ -7,12 +7,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.hamcrest.CoreMatchers;
 
-import static co.com.sofkau.questions.ObtenerLogoPaginaPrincipal.obtenerLogoPaginaPrincipal;
-import static co.com.sofkau.questions.ObtenerMensajeInicioDeSesion.obtenerMensajeInicioDeSesion;
-import static co.com.sofkau.tasks.AbrirPaginaPrincipal.abrirPaginaPrincipal;
-import static co.com.sofkau.tasks.LlenarAutenticacion.llenarAutenticacion;
-import static co.com.sofkau.tasks.LlenarRegistro.llenarRegistro;
-import static co.com.sofkau.tasks.NavegarAAutenticacion.navegarAAutenticacion;
+import static co.com.sofkau.questions.web.ObtenerLogoPaginaPrincipal.obtenerLogoPaginaPrincipal;
+import static co.com.sofkau.questions.web.ObtenerMensajeInicioDeSesion.obtenerMensajeInicioDeSesion;
+import static co.com.sofkau.tasks.web.AbrirPaginaPrincipal.abrirPaginaPrincipal;
+import static co.com.sofkau.tasks.web.LlenarAutenticacion.llenarAutenticacion;
+import static co.com.sofkau.tasks.web.LlenarRegistro.llenarRegistro;
+import static co.com.sofkau.tasks.web.NavegarAAutenticacion.navegarAAutenticacion;
 import static co.com.sofkau.utils.Constante.MENSAJE_ESPERADO_DE_LOGIN;
 import static co.com.sofkau.utils.Constante.URL_PAGINA_PRINCIPAL;
 import static co.com.sofkau.utils.Util.crearUsuario;

@@ -10,5 +10,10 @@ Feature:  pruebas de servicio soap
     Then deberia obtener un statuscode 200
     And deberia obtener el nombre "<nombre>" del pais
     Examples:
-      | ISO | nombre |
-      | FR  | France |
+      | ISO | nombre    |
+      | FR  | France    |
+      | COL | Colombia  |
+      | ES  | Spain     |
+      | DEU | Germany   |
+      | ARG | Argentina |
+      | DK  | Denmark   |

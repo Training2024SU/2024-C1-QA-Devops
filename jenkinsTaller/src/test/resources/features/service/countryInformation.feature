@@ -6,7 +6,7 @@ Feature:  pruebas de servicio soap
   @codigoIso
   Scenario Outline: prueba nombre  del pais segun codigo iso
     Given que el es usuario quiere ingresar el codigo "<ISO>" con "http://webservices.oorsprong.org"
-    When realiza la peticion de tipo soap con el recurso "/websamples.countryinfo/CountryInfoService.wso"
+    When hace la peticion de tipo soap con el recurso "/websamples.countryinfo/CountryInfoService.wso"
     Then deberia obtener un statuscode 200
     And deberia obtener el nombre "<nombre>" del pais
     Examples:

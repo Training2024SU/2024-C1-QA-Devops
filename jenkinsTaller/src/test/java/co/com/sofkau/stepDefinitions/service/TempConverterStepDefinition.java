@@ -16,7 +16,6 @@ public class TempConverterStepDefinition extends SetupService {
     public void queElEsUsuarioQuiereConvertirCelsiusAFahrenheitEn(Integer int1, String urlBase) {
         super.setupService(urlBase);
         valor= String.valueOf(int1);
-
     }
 
 //    @When("realiza la peticion de tipo soap con el recurso {string}")

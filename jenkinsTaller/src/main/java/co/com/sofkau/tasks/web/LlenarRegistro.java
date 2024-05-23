@@ -1,4 +1,4 @@
-package co.com.sofkau.tasks;
+package co.com.sofkau.tasks.web;
 
 import co.com.sofkau.models.UsuarioModel;
 import net.serenitybdd.screenplay.Actor;
@@ -21,7 +21,6 @@ public class LlenarRegistro implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(
-
                 WaitUntil.the(CAMPO_CONFIRMA_EMAIL, isVisible()).forNoMoreThan(10).seconds(),
                 Enter.theValue(usuario.getConfirmarEmail()).into(CAMPO_CONFIRMA_EMAIL),
                 Enter.theValue(usuario.getNombre()).into(CAMPO_NOMBRE),
@@ -31,14 +30,7 @@ public class LlenarRegistro implements Task {
                 Enter.theValue(usuario.getConfirmarPassword()).into(CAMPO_CONFIRMA_PASSWORD),
                 Scroll.to(BOTON_CREAR_CUENTA),
                 Click.on(BOTON_CREAR_CUENTA)
-              //  WaitUntil.the(MENSAJE_CONFIRMACION_INICIO_SESION, isVisible()).forNoMoreThan(10).seconds()
         );
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
     }
     public static LlenarRegistro llenarRegistro(){
         return new LlenarRegistro();

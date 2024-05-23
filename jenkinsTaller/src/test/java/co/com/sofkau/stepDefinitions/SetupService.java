@@ -19,8 +19,4 @@ public class SetupService {
         headersCollection.put("SOAPAction","");
         return headersCollection;
     }
-
-
-
-
 }

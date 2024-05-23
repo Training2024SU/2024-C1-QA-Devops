@@ -23,7 +23,7 @@ public class SetUp {
     }
 
     protected void actorSetUpTheBrowser(String navegador){
-        WebDriver webDriver = getWebDriver(navegador);
+        webDriver = getWebDriver(navegador);
         setUpActor(webDriver);
         maximizar(webDriver);
     }

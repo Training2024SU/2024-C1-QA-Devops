@@ -1,4 +1,4 @@
-package co.com.sofkau;
+package co.com.sofkau.runners;
 
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         features = {"src/test/resources/features"},
-        glue = {"co.com.sofkau.stepdefinitions",
+        glue = {"co.com.sofkau.stepDefinitions",
                 "co.com.sofkau.hooks"}
 )
 public class GeneralTest {

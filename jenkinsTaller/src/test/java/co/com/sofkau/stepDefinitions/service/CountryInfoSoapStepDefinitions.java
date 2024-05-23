@@ -20,6 +20,8 @@ public class CountryInfoSoapStepDefinitions extends SetupService {
     public void que_el_es_usuario_quiere_ingresar_el_codigo_con(String iso, String urlBase) {
         super.setupService(urlBase);
         codigoISO = iso;
+
+
     }
 
     @When("hace la peticion de tipo soap con el recurso {string}")

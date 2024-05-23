@@ -6,6 +6,7 @@ import net.datafaker.Faker;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class Util {
     private Util() {
@@ -37,6 +38,10 @@ public class Util {
         return list.get(randomIdx);
     }
 
+    public static <T> int escogerIndexAleatorio(List<T> list) {
+        Random random = new Random();
+        return random.nextInt(list.size());
+    }
 
 
     public static String obtenerTituloAleatorio() {

@@ -2,7 +2,7 @@ package co.com.sofkau.stepDefinitions.web;
 
 import co.com.sofkau.stepDefinitions.SetUp;
 import co.com.sofkau.tasks.AgregarProducto;
-import co.com.sofkau.tasks.BuscarPorTexto;
+import co.com.sofkau.tasks.web.BuscarPorTexto;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 

@@ -8,8 +8,7 @@ Feature: Agregar productos al carrito
     Given El usuario navega en internet usando el navegador "chrome"
 
 
-  @agregarcarrito
-  Scenario: Búsqueda por categoría
+  Scenario: Agregar productos al carrito
     Given El usuario se encuentra en la página principal
     When agrega los siguientes productos al carrito
       | cien anos de soledad |

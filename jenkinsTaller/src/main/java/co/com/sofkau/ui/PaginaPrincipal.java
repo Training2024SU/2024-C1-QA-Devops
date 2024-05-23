@@ -17,4 +17,8 @@ public class PaginaPrincipal extends PageObject {
             .located(By.cssSelector("#buscador input"));
     public static final Target CATEGORIAS = Target.the("Categorías de libros")
             .located(By.cssSelector("#categoriasdeployed ul li"));
+
+    public static Target URL_CARRITO = Target.the("El boton del carrito")
+            .located(By.xpath("//a[@class='carrito ']"));
+
 }

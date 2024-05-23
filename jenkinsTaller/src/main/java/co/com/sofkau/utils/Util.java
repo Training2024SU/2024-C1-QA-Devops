@@ -36,6 +36,8 @@ public class Util {
         return list.get(randomIdx);
     }
 
+
+
     public static String obtenerTituloAleatorio() {
         List<String> libros = Arrays.asList(
                 "La Sombra del Viento",

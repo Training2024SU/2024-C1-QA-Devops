@@ -3,6 +3,7 @@ Feature: Inicio de sesion
   quiero porder ingresar mis credenciales registradas
   para poder ingresar y obtener los beneficios de la pagina
 
+#navegadores --> chrome y edge
   @RutaFeliz
   Scenario: Login correcto
     Given que el usuario selecciona el navegador "chrome" e ingresa al sitio web

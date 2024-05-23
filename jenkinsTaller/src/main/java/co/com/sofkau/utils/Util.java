@@ -1,5 +1,6 @@
 package co.com.sofkau.utils;
 
+import co.com.sofkau.models.FormularioDeEnvioModel;
 import co.com.sofkau.models.UsuarioModel;
 import net.datafaker.Faker;
 
@@ -62,5 +63,18 @@ public class Util {
                 "La Divina Comedia"
         );
         return escogerItemAleatorio(libros);
+    }
+
+    public static FormularioDeEnvioModel crearDireccionDeEnvio(){
+        Faker faker = new Faker();
+
+        FormularioDeEnvioModel formularioDeEnvioModel = new FormularioDeEnvioModel();
+
+        formularioDeEnvioModel.setCedula(faker.numerify("1#########"));
+        formularioDeEnvioModel.setDestinatario(faker.name().fullName());
+        formularioDeEnvioModel.setDireccion(faker.address().streetAddress());
+        formularioDeEnvioModel.setTelefono(faker.phoneNumber().cellPhone());
+
+        return formularioDeEnvioModel;
     }
 }

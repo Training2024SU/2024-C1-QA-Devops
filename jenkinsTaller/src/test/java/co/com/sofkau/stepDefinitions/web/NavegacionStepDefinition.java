@@ -3,7 +3,7 @@ package co.com.sofkau.stepDefinitions.web;
 import co.com.sofkau.stepDefinitions.SetUp;
 import io.cucumber.java.en.Given;
 
-import static co.com.sofkau.tasks.AbrirPaginaPrincipal.abrirPaginaPrincipal;
+import static co.com.sofkau.tasks.web.AbrirPaginaPrincipal.abrirPaginaPrincipal;
 import static co.com.sofkau.utils.Constante.URL_PAGINA_PRINCIPAL;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 

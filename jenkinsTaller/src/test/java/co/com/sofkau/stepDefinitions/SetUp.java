@@ -1,5 +1,6 @@
 package co.com.sofkau.stepDefinitions;
 
+import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
@@ -12,7 +13,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 
 public class SetUp {
-
+    @Managed
     protected static WebDriver webDriver;
 
     private void setUpActor(WebDriver webDriver){

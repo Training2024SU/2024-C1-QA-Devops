@@ -14,6 +14,7 @@ Feature: Compra en pagina
     And selecciona el metodo de pago con efecty
     Then deberia visualizar un mensaje confirmando la orden de compra
 
+
   Scenario: Compra completa con tarjeta
     Given que el usuario selecciona el navegador "chrome" y se registra en el sitio web
     When agrega los siguientes productos al carrito

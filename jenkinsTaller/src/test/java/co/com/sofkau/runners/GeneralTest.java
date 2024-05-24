@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
         glue = {"co.com.sofkau.stepDefinitions",
                 "co.com.sofkau.hooks"},
         plugin = {"pretty", "json:target/cucumber/cucumber-report.json"}
+
 )
 public class GeneralTest {
 }

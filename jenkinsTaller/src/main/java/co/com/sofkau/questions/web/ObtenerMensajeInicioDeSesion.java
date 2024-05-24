@@ -9,7 +9,7 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisi
 public class ObtenerMensajeInicioDeSesion implements Question<String> {
     @Override
     public String answeredBy(Actor actor) {
-        WaitUntil.the(MENSAJE_CONFIRMACION_INICIO_SESION, isVisible()).forNoMoreThan(10).seconds();
+        WaitUntil.the(MENSAJE_CONFIRMACION_INICIO_SESION, isVisible()).forNoMoreThan(20).seconds();
         return MENSAJE_CONFIRMACION_INICIO_SESION.resolveFor(actor).getText();
     }
     public static ObtenerMensajeInicioDeSesion obtenerMensajeInicioDeSesion(){

@@ -30,9 +30,9 @@ public class PaginaFormuarioDeEnvio extends PageObject {
             the("campo telefono").located(org.openqa.selenium.By.
                     xpath("//input[@id = 'direccion_telefono']"));
     public static final Target BOTON_VALIDAR_DIRECCION = Target.
-            the("campo telefono").located(org.openqa.selenium.By.
+            the("botón validar dirección").located(org.openqa.selenium.By.
                     xpath("//button[text()='Validar Dirección']"));
     public static final Target BOTON_ENVIAR_AQUI = Target.
-            the("campo telefono").located(org.openqa.selenium.By.
+            the("botón enviar").located(org.openqa.selenium.By.
                     xpath("//button[text()='ENVIAR AQUÍ']"));
 }

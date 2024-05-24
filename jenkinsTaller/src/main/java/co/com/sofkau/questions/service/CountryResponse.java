@@ -9,8 +9,7 @@ public class CountryResponse implements Question<String> {
     @Override
     public String answeredBy(Actor actor) {
         Response response = SerenityRest.lastResponse();
-        String countryName = response.xmlPath().getString("Envelope.Body.CountryNameResponse.CountryNameResult");
-        return countryName;
+        return response.xmlPath().getString("Envelope.Body.CountryNameResponse.CountryNameResult");
     }
 
     public static CountryResponse containsName(){

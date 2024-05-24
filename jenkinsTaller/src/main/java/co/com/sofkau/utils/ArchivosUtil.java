@@ -7,6 +7,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class ArchivosUtil {
+    private ArchivosUtil() {
+        throw new IllegalStateException();
+    }
 
     public static boolean verifyIfFileExist(String filePath){
         File file = new File(filePath);
@@ -29,8 +32,8 @@ public class ArchivosUtil {
         StringBuilder stringBuilder = new StringBuilder();
         try (BufferedReader br = Files.newBufferedReader(Paths.get(filePath))) {
             while ((line = br.readLine()) != null)
-                stringBuilder.append(line + "\n");
-        } catch (IOException ioException) {
+                stringBuilder.append(line).append("\n");
+        } catch (IOException ignored) {
         }
         return stringBuilder.toString();
     }

@@ -9,7 +9,6 @@ import net.serenitybdd.screenplay.actions.Scroll;
 import org.openqa.selenium.By;
 
 import java.util.List;
-import java.util.Random;
 
 import static co.com.sofkau.ui.PaginaPrincipal.BARRA_BUSQUEDA;
 import static co.com.sofkau.ui.PaginaResultadoBusqueda.*;

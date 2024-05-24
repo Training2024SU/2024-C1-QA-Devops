@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources/features"},
         glue = {"co.com.sofkau.stepDefinitions",
                 "co.com.sofkau.hooks"},
-        plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"}
+        plugin = {"pretty", "json:target/cucumber-report.json"}
 )
 public class GeneralTest {
 }

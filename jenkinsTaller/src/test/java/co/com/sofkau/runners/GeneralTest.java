@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         features = {"src/test/resources/features"},
         glue = {"co.com.sofkau.stepDefinitions",
-                "co.com.sofkau.hooks"}
+                "co.com.sofkau.hooks"},
+        plugin = {"pretty", "json:target/cucumber/cucumber-report.json"}
 )
 public class GeneralTest {
 }

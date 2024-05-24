@@ -41,9 +41,14 @@ public class CompraYRegistroStepDefinition extends SetUp {
     public void confirmaLosProductosLlenandoLosFormuariosRequeridosParaElEnvio(){
         theActorInTheSpotlight().attemptsTo(
                 irAlCarrito(),
-                llenarFormularioDeEnvio().conLosDatos(crearDireccionDeEnvio()),
-                pagarConEfecty()
+                llenarFormularioDeEnvio().conLosDatos(crearDireccionDeEnvio())
                 );
+    }
+    @When ("selecciona el metodo de pago con efecty")
+    public void seleccionaElMetodoDePagoConEfecty(){
+        theActorInTheSpotlight().attemptsTo(
+                pagarConEfecty()
+        );
     }
     @Then("deberia visualizar un mensaje confirmando la orden de compra")
     public void deberiaVisualizarUnMensajeConfirmandoLaOrdenDeCompra(){

@@ -8,8 +8,8 @@ import io.cucumber.java.en.When;
 
 import java.util.List;
 
-import static co.com.sofkau.questions.BotonConfirmarCompra.botonConfirmarCompra;
-import static co.com.sofkau.questions.CantidadLibrosAgregados.cantidadLibrosAgregados;
+import static co.com.sofkau.questions.web.BotonConfirmarCompra.botonConfirmarCompra;
+import static co.com.sofkau.questions.web.CantidadLibrosAgregados.cantidadLibrosAgregados;
 import static co.com.sofkau.tasks.web.IrAlCarrito.irAlCarrito;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;

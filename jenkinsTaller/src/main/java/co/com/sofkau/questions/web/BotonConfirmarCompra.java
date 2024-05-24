@@ -1,9 +1,8 @@
-package co.com.sofkau.questions;
+package co.com.sofkau.questions.web;
 
 import co.com.sofkau.ui.PaginaCarrito;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-import net.serenitybdd.screenplay.Task;
 
 public class BotonConfirmarCompra implements Question<Boolean> {
 

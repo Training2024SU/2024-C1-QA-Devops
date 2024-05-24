@@ -12,5 +12,5 @@ public class PaginaPago extends PageObject {
 
     public static final Target FORMA_DE_PAGO_MERCADOPAGO = Target.
             the("forma de pago MercadoPago").located(org.openqa.selenium.By.
-                    xpath("//h6[text()='MercadoPago']")).waitingForNoMoreThan(Duration.ofSeconds(15));
+                    xpath("//h6[text()='MercadoPago']")).waitingForNoMoreThan(Duration.ofSeconds(20));
 }

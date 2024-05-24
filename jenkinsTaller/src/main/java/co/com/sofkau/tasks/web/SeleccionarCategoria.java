@@ -20,7 +20,6 @@ public class SeleccionarCategoria implements Task {
         ListOfWebElementFacades categorias = CATEGORIAS.resolveAllFor(actor);
         WebElementFacade categoria = escogerItemAleatorio(categorias);
         actor.remember("categoria", categoria.getText());
-        System.err.println(categoria.getText());
         actor.attemptsTo(
                 Scroll.to(categoria),
                 Click.on(categoria)

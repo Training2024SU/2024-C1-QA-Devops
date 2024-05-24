@@ -5,6 +5,7 @@ import co.com.sofkau.models.TarjetaModel;
 import co.com.sofkau.models.UsuarioModel;
 import net.datafaker.Faker;
 
+import java.security.SecureRandom;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.Random;
 
 public class Util {
     private static final Faker faker = new Faker();
-    private static final Random random = new Random();
+    private static final Random random = new SecureRandom();
 
     private Util() {
         throw new IllegalStateException("Utility Class");

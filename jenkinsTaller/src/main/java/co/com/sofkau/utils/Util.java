@@ -96,4 +96,10 @@ public class Util {
         );
     }
 
+
+    public static String id(){
+        Random random = new Random();
+        int randomNumber = random.nextInt(22) + 1;
+        return Integer.toString(randomNumber);
+    }
 }

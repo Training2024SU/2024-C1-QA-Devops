@@ -3,6 +3,7 @@ Feature: Formulario de registro
   quiero llenar el formulario de registro
   para poder ingresar y obtener los beneficios de la página
 
+#navegadores --> chrome y edge
   @RutaFeliz
   Scenario: Registro correcto
     Given que el usuario selecciona el navegador "chrome" e ingresa al sitio web

@@ -1,4 +1,4 @@
-package co.com.sofkau.stepDefinitions;
+package co.com.sofkau.stepDefinitions.web;
 
 import co.com.sofkau.questions.web.ListaLibrosResultado;
 import co.com.sofkau.tasks.web.BuscarPorTexto;

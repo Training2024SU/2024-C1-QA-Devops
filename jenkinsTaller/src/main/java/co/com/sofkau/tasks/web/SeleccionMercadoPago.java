@@ -1,6 +1,5 @@
 package co.com.sofkau.tasks.web;
 
-import co.com.sofkau.ui.PaginaPago;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;

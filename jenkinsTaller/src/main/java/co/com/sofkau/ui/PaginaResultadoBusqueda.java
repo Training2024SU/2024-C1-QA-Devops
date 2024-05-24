@@ -14,12 +14,9 @@ public class PaginaResultadoBusqueda extends PageObject {
     public static final Target TITULO_BUSQUEDA_TEXTO = Target.the("Titulo resultado de busqueda por texto")
             .located(By.cssSelector(".cantidadProductos h2")).waitingForNoMoreThan(Duration.ofSeconds(10));
 
-
-
-    public static Target LISTA_PRODUCTS_CON_BOTON = Target.the("Listado de libros con boton")
+    public static final Target LISTA_PRODUCTS_CON_BOTON = Target.the("Listado de libros con boton")
             .located(By.xpath("//div[contains(@class, 'box-producto')]")).waitingForNoMoreThan(Duration.ofSeconds(15));
 
-
-    public static String AGREGAR_CARRITO_STRING = "(//a[contains(text(), 'Agregar')])[%s]";
+    public static final String AGREGAR_CARRITO_STRING = "(//a[contains(text(), 'Agregar')])[%s]";
 
 }

@@ -12,6 +12,7 @@ import java.util.Random;
 
 public class Util {
     private static final Faker faker = new Faker();
+    private static final Random random = new Random();
 
     private Util() {
         throw new IllegalStateException("Utility Class");
@@ -34,12 +35,11 @@ public class Util {
     }
 
     public static <T> T escogerItemAleatorio(List<T> list) {
-        int randomIdx = (int) Math.floor(Math.random() * list.size());
+        int randomIdx = random.nextInt(list.size());
         return list.get(randomIdx);
     }
 
     public static <T> int escogerIndexAleatorio(List<T> list) {
-        Random random = new Random();
         return random.nextInt(list.size());
     }
 
@@ -98,7 +98,6 @@ public class Util {
 
 
     public static String id(){
-        Random random = new Random();
         int randomNumber = random.nextInt(22) + 1;
         return Integer.toString(randomNumber);
     }

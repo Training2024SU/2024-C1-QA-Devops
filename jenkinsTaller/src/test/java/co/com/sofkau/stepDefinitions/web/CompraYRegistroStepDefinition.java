@@ -2,12 +2,14 @@ package co.com.sofkau.stepDefinitions.web;
 
 import co.com.sofkau.models.UsuarioModel;
 import co.com.sofkau.stepDefinitions.SetUp;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import static co.com.sofkau.tasks.IrAlCarrito.irAlCarrito;
+
 import static co.com.sofkau.tasks.web.AbrirPaginaPrincipal.abrirPaginaPrincipal;
+import static co.com.sofkau.tasks.web.IrAlCarrito.irAlCarrito;
 import static co.com.sofkau.tasks.web.LlenarAutenticacion.llenarAutenticacion;
 import static co.com.sofkau.tasks.web.LlenarFormularioDeEnvio.llenarFormularioDeEnvio;
 import static co.com.sofkau.tasks.web.LlenarRegistro.llenarRegistro;
@@ -31,15 +33,18 @@ public class CompraYRegistroStepDefinition extends SetUp {
                 llenarRegistro().conElUsuario(usuario)
         );
     }
+
     @When("confirma los productos llenando los formularios requeridos para el envio")
-    public void confirmaLosProductosLlenandoLosFormuariosRequeridosParaElEnvio(){
+    public void confirmaLosProductosLlenandoLosFormuariosRequeridosParaElEnvio() {
         theActorInTheSpotlight().attemptsTo(
                 irAlCarrito(),
                 llenarFormularioDeEnvio().conLosDatos(crearDireccionDeEnvio())
-                );
+        );
     }
+
     @Then("deberia visualizar un mensaje confirmando la orden de compra")
-    public void deberiaVisualizarUnMensajeConfirmandoLaOrdenDeCompra(){
+    public void deberiaVisualizarUnMensajeConfirmandoLaOrdenDeCompra() {
 
     }
+
 }
